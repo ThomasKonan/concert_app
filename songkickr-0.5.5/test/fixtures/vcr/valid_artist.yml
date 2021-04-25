@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.songkick.com/api/3.0/artists/253846.json?apikey=hFYxiInE4DBpH5KL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 21 Jul 2013 15:47:07 GMT
+      status:
+      - 200 OK
+      content-type:
+      - application/json; charset=utf-8
+      cache-control:
+      - private, max-age=3600
+      expires:
+      - Sun, 21 Jul 2013 16:47:07 GMT
+      vary:
+      - Accept-Encoding
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"resultsPage":{"status":"ok","results":{"artist":{"uri":"http://www.songkick.com/artists/253846-radiohead?utm_source=4791&utm_medium=partner","displayName":"Radiohead","onTourUntil":null,"identifier":[{"mbid":"a74b1b7f-71a5-4011-9441-d0b5e4122711","href":"http://api.songkick.com/api/3.0/artists/mbid:a74b1b7f-71a5-4011-9441-d0b5e4122711.json","eventsHref":"http://api.songkick.com/api/3.0/artists/mbid:a74b1b7f-71a5-4011-9441-d0b5e4122711/calendar.json","setlistsHref":"http://api.songkick.com/api/3.0/artists/mbid:a74b1b7f-71a5-4011-9441-d0b5e4122711/setlists.json"}],"id":253846}}}}'
+    http_version: '1.1'
+  recorded_at: Sun, 21 Jul 2013 15:47:11 GMT
+recorded_with: VCR 2.5.0

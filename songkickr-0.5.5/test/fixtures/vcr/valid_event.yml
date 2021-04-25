@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.songkick.com/api/3.0/events/17522.json?apikey=hFYxiInE4DBpH5KL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U3VuLCAyMSBKdWwgMjAxMyAxNTo0NzowOCBHTVQ=
+      !binary "c3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbWF4LWFnZT0zNjAw
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        U3VuLCAyMSBKdWwgMjAxMyAxNjo0NzowOCBHTVQ=
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHRzUGFnZSI6eyJzdGF0dXMiOiJvayIsInJlc3VsdHMiOnsiZXZl
+        bnQiOnsiZGlzcGxheU5hbWUiOiJCYW5nIEJhbmcgd2l0aCBJbXBlcmlhbCBU
+        ZWVuIGF0IEFiYmV5IFB1YiAoT2N0b2JlciA0LCAyMDA3KSIsInR5cGUiOiJD
+        b25jZXJ0Iiwic3RhdHVzIjoib2siLCJ2ZW51ZSI6eyJ3ZWJzaXRlIjoiaHR0
+        cDovL3d3dy5hYmJleXB1Yi5jb20iLCJzdHJlZXQiOiIzNDIwIFcuIEdyYWNl
+        IFN0LiIsImRpc3BsYXlOYW1lIjoiQWJiZXkgUHViIiwiemlwIjoiNjA2MTgi
+        LCJwaG9uZSI6Ijc3MyA0NzggNDQwOCIsImRlc2NyaXB0aW9uIjoiU2luY2Ug
+        MTk3MywgVGhlIEFiYmV5IGhhcyBiZWVuIENoaWNhZ2/igJlzIGhvbWUgZm9y
+        IGxpdmUgbXVzaWMsIGdvb2QgZm9vZCBhbmQgZ3JlYXQgdGltZXMuICBUaGUg
+        QWJiZXkgaGFzIGxpdmUgbXVzaWMgbW9zdCBuaWdodHMsIGZlYXR1cmluZyBs
+        b2NhbCwgcmVnaW9uYWwgYW5kIG5hdGlvbmFsIGFjdHMgZnJvbSBpbmRpZSBy
+        b2NrIHRvIHRyYWRpdGlvbmFsIElyaXNoIG11c2ljLiAgVGhlIEFiYmV5IHNl
+        cnZlcyAgZGlubmVyIG5pZ2h0bHkgYW5kIGJydW5jaCBvbiBTYXR1cmRheSBh
+        bmQgU3VuZGF5IGZlYXR1cmluZyBJcmlzaCBhbmQgQW1lcmljYW4gZm9vZC4g
+        IE1ha2UgYSBkaW5uZXIgcmVzZXJ2YXRpb24gYmVmb3JlIGFueSBzaG93IGFu
+        ZCBnZXQgcHJlZmVycmVkIFZJUCBzZWF0aW5nISAgV2F0Y2ggYWxsIG1ham9y
+        IHNwb3J0aW5nIGV2ZW50cyBvbiBvdXIgMTUtZm9vdCBwcm9qZWN0b3IgYW5k
+        IG9uIDE0IGZsYXQgc2NyZWVucy4gV2UgZmVhdHVyZSBsaXZlIGludGVybmF0
+        aW9uYWwgc3BvcnRzIHRlbGVjYXN0cyAocnVnYnksIHNvY2NlciwgR2FlbGlj
+        KSBhcyB3ZWxsIGFzIGFsbCBtYWpvciBBbWVyaWNhbiBzcG9ydGluZyBldmVu
+        dHMuXHJcblxyXG5DYWxsIDc3My40NzguNDQwOCB0b2RheSB0byBtYWtlIHlv
+        dXIgcmVzZXJ2YXRpb24hIiwiY2FwYWNpdHkiOjU1MCwiY2l0eSI6eyJkaXNw
+        bGF5TmFtZSI6IkNoaWNhZ28iLCJ1cmkiOiJodHRwOi8vd3d3LnNvbmdraWNr
+        LmNvbS9tZXRyb19hcmVhcy85NDI2LXVzLWNoaWNhZ28/dXRtX3NvdXJjZT00
+        NzkxJnV0bV9tZWRpdW09cGFydG5lciIsImlkIjo5NDI2LCJzdGF0ZSI6eyJk
+        aXNwbGF5TmFtZSI6IklMIn0sImNvdW50cnkiOnsiZGlzcGxheU5hbWUiOiJV
+        UyJ9fSwibWV0cm9BcmVhIjp7ImRpc3BsYXlOYW1lIjoiQ2hpY2FnbyIsInVy
+        aSI6Imh0dHA6Ly93d3cuc29uZ2tpY2suY29tL21ldHJvX2FyZWFzLzk0MjYt
+        dXMtY2hpY2Fnbz91dG1fc291cmNlPTQ3OTEmdXRtX21lZGl1bT1wYXJ0bmVy
+        IiwiaWQiOjk0MjYsInN0YXRlIjp7ImRpc3BsYXlOYW1lIjoiSUwifSwiY291
+        bnRyeSI6eyJkaXNwbGF5TmFtZSI6IlVTIn19LCJsYXQiOjQxLjk1MDE0ODQs
+        InVyaSI6Imh0dHA6Ly93d3cuc29uZ2tpY2suY29tL3ZlbnVlcy81NDY3NTYt
+        YWJiZXktcHViP3V0bV9zb3VyY2U9NDc5MSZ1dG1fbWVkaXVtPXBhcnRuZXIi
+        LCJsbmciOi04Ny43MTM3NjExLCJpZCI6NTQ2NzU2fSwicGVyZm9ybWFuY2Ui
+        Olt7ImFydGlzdCI6eyJkaXNwbGF5TmFtZSI6IkJhbmcgQmFuZyIsImlkZW50
+        aWZpZXIiOlt7Im1iaWQiOiJjODg4ZDc4MC01NjVjLTQ3MTktYWIyMC1hMWRh
+        NzM3OTYyMjgiLCJocmVmIjoiaHR0cDovL2FwaS5zb25na2ljay5jb20vYXBp
+        LzMuMC9hcnRpc3RzL21iaWQ6Yzg4OGQ3ODAtNTY1Yy00NzE5LWFiMjAtYTFk
+        YTczNzk2MjI4Lmpzb24ifSx7Im1iaWQiOiI0ZjRkNmQxZS1kZDhmLTRiNGIt
+        YTRhNS00YTMyNGM3NTEyZWMiLCJocmVmIjoiaHR0cDovL2FwaS5zb25na2lj
+        ay5jb20vYXBpLzMuMC9hcnRpc3RzL21iaWQ6NGY0ZDZkMWUtZGQ4Zi00YjRi
+        LWE0YTUtNGEzMjRjNzUxMmVjLmpzb24ifSx7Im1iaWQiOiJhN2Y4YjNhZC1k
+        MGUwLTRmOTUtODVlMS05ZTczZGQ1NWJkNDkiLCJocmVmIjoiaHR0cDovL2Fw
+        aS5zb25na2ljay5jb20vYXBpLzMuMC9hcnRpc3RzL21iaWQ6YTdmOGIzYWQt
+        ZDBlMC00Zjk1LTg1ZTEtOWU3M2RkNTViZDQ5Lmpzb24ifSx7Im1iaWQiOiI0
+        Y2JhNzVmZC1kZTMxLTRhMzgtYWE1MC05YjFmNWJhY2RkNGQiLCJocmVmIjoi
+        aHR0cDovL2FwaS5zb25na2ljay5jb20vYXBpLzMuMC9hcnRpc3RzL21iaWQ6
+        NGNiYTc1ZmQtZGUzMS00YTM4LWFhNTAtOWIxZjViYWNkZDRkLmpzb24ifSx7
+        Im1iaWQiOiJhNWIwM2U1ZS00ZWIzLTQ0Y2QtYjBjMC1jYjkzZDVhY2YxMDci
+        LCJocmVmIjoiaHR0cDovL2FwaS5zb25na2ljay5jb20vYXBpLzMuMC9hcnRp
+        c3RzL21iaWQ6YTViMDNlNWUtNGViMy00NGNkLWIwYzAtY2I5M2Q1YWNmMTA3
+        Lmpzb24ifV0sInVyaSI6Imh0dHA6Ly93d3cuc29uZ2tpY2suY29tL2FydGlz
+        dHMvNDk1MzMyLWJhbmctYmFuZz91dG1fc291cmNlPTQ3OTEmdXRtX21lZGl1
+        bT1wYXJ0bmVyIiwiaWQiOjQ5NTMzMn0sImRpc3BsYXlOYW1lIjoiQmFuZyBC
+        YW5nIiwiYmlsbGluZ0luZGV4IjoxLCJiaWxsaW5nIjoiaGVhZGxpbmUiLCJp
+        ZCI6NTc2ODkyMX0seyJhcnRpc3QiOnsiZGlzcGxheU5hbWUiOiJJbXBlcmlh
+        bCBUZWVuIiwiaWRlbnRpZmllciI6W3sibWJpZCI6IjdkNDc4YmQyLWQyMjgt
+        NDZhOC04YTdjLWVmNjhhNjFmZDMzOSIsImhyZWYiOiJodHRwOi8vYXBpLnNv
+        bmdraWNrLmNvbS9hcGkvMy4wL2FydGlzdHMvbWJpZDo3ZDQ3OGJkMi1kMjI4
+        LTQ2YTgtOGE3Yy1lZjY4YTYxZmQzMzkuanNvbiJ9XSwidXJpIjoiaHR0cDov
+        L3d3dy5zb25na2ljay5jb20vYXJ0aXN0cy8zOTc2MzEtaW1wZXJpYWwtdGVl
+        bj91dG1fc291cmNlPTQ3OTEmdXRtX21lZGl1bT1wYXJ0bmVyIiwiaWQiOjM5
+        NzYzMX0sImRpc3BsYXlOYW1lIjoiSW1wZXJpYWwgVGVlbiIsImJpbGxpbmdJ
+        bmRleCI6MiwiYmlsbGluZyI6InN1cHBvcnQiLCJpZCI6MjI1MjZ9XSwibG9j
+        YXRpb24iOnsibGF0Ijo0MS45NTAxNDg0LCJsbmciOi04Ny43MTM3NjExLCJj
+        aXR5IjoiQ2hpY2FnbywgSUwsIFVTIn0sInBvcHVsYXJpdHkiOjAuMDA4NDcz
+        LCJzdGFydCI6eyJkYXRldGltZSI6IjIwMDctMTAtMDRUMjE6MDA6MDAtMDYw
+        MCIsInRpbWUiOiIyMTowMDowMCIsImRhdGUiOiIyMDA3LTEwLTA0In0sInVy
+        aSI6Imh0dHA6Ly93d3cuc29uZ2tpY2suY29tL2NvbmNlcnRzLzE3NTIyLWJh
+        bmctYmFuZy1hdC1hYmJleS1wdWI/dXRtX3NvdXJjZT00NzkxJnV0bV9tZWRp
+        dW09cGFydG5lciIsImlkIjoxNzUyMn19fX0=
+    http_version: !binary |-
+      MS4x
+  recorded_at: Sun, 21 Jul 2013 15:47:11 GMT
+recorded_with: VCR 2.5.0
