@@ -1,5 +1,5 @@
 class Api::SearchesController < ApplicationController
-
+  # Working method
   # remote = Songkickr::Remote.new 'hFYxiInE4DBpH5KL'
   # @results = remote.artist_search(artist_name: "Iron Maiden", per_page: '10').results
   # @results.each do |result|
