@@ -1,18 +1,9 @@
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "lib"))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require "httparty"
+require "songkickr"
+
 class Api::SearchesController < ApplicationController
-  # Working method
-  # remote = Songkickr::Remote.new 'hFYxiInE4DBpH5KL'
-  # @results = remote.artist_search(artist_name: "Iron Maiden", per_page: '10').results
-  # @results.each do |result|
-  #   print result.display_name + "\n"
-  # end
-
-  # print "\n"
-
-  $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "lib"))
-  $LOAD_PATH.unshift(File.dirname(__FILE__))
-  require "httparty"
-  require "songkickr"
-
   module Songkickr
     module RemoteApi
       module UpcomingEvents
@@ -31,7 +22,6 @@ class Api::SearchesController < ApplicationController
         # * +page+ - Page number
         # * +per_page+ - Number of results per page, max 50.
         # * +order+ - Results are sorted by date. The order can be specified with: order ('asc' or 'desc', 'asc' by default).
-
         def artist_events(artist_id_or_music_brainz_id, query = {})
           if artist_id_or_music_brainz_id.to_s.match(/^mbid\:\d+$/)
             url = "/artists/mbid:#{artist_id_or_music_brainz_id}/calendar.json"
@@ -185,95 +175,4 @@ class Api::SearchesController < ApplicationController
       end
     end
   end
-
-  class APIKeyNotSet < StandardError
-    # Warns of missing API key
-    def to_s
-      "API key not set!"
-    end
-  end
-
-  class APIError < StandardError
-    def initialize(message = "API Error")
-      @message = message
-    end
-
-    def to_s
-      @message
-    end
-  end
-
-  class ResourceNotFound < APIError
-    def to_s
-      "Resource not found"
-    end
-  end
-
-  module Songkickr
-    # Returns the Songkick API key
-    # In order to use the Songkick API, you must have a Songkick API (their rule, not mine).
-    # Get an API key for your app from http://developer.songkick.com/
-    #
-    # ==== Example
-    #
-    #   require 'songkickr'
-    #   remote = Songkickr::Remote.new XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    #   remote.api_key
-    #   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    def self.api_key
-      raise APIKeyNotSet if @api_key.nil?
-
-      @api_key
-    end
-
-    # Set the API key. In the event you need to set the API key after initializing the the remote.
-    # === Parameters
-    #
-    # * +api_key+ - A developer key from Songkick. Get an API key for your app from http://www.songkick.com/developer/
-    def self.api_key=(api_key)
-      @api_key = api_key
-    end
-  end
 end
-
-#   require "songkickr"
-#   require "setlistfm"
-#   # remote = Songkickr::Remote.new API_KEY
-#   # attr_reader :sk, :per_page
-
-#   # setlistfm = Setlistfm.new
-
-#   # def create
-#   # end
-
-#   # def show
-#   #   # @post = Post.find_by(id: params[:id])
-#   #   render "show.json.jbuilder"
-#   # end
-
-#   # def update
-#   # end
-
-#   # def destroy
-#   # end
-
-#   # def initialize
-#   #   @@sk = Songkickr::Remote.new config.songkick_api[:api_key]
-#   #   @per_page = 100
-#   # end
-
-#   #     # if params[:search].blank?
-#   #     #   render json: { message: "Empty field!" }
-#   #     #   redirect_to(root_path, alert: "Empty field!") and return
-#   #     # else
-#   #     #   @parameter = params[:search].downcase
-#   #     #   @results = Store.all.where("lower(name) LIKE :search", search: @parameter)
-#   #   end
-# def index
-#   @results = UpcomingEvents.all
-#   render "index.json.jbuilder"
-# end
-
-# def search
-#   @results = UpcomingEvents.all
-# end
