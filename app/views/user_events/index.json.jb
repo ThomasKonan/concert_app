@@ -1,0 +1,10 @@
+@user_events.map do |user_event|
+  {
+    id: user_event.id,
+    artist: user_event.artist,
+    location: user_event.location,
+    user_id: user_event.user_id,
+    venue: user_event.venue,
+    date: user_event.date,
+  }
+end

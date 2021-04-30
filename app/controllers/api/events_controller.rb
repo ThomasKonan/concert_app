@@ -4,17 +4,19 @@ require "setlistfm"
 class Api::EventsController < ApplicationController
   def index
     remote = Songkickr::Remote.new Rails.application.credentials.songkick_api[:api_key]
-    results = remote.events(params[:artist_name])
-    results.results[0].location.city
-    @events = results.results[0].display_name
-    render "index.json.jb"
+    if params[:search_type] == "Artist"
+      results = remote.events(params[:artist_name])
+      p results.results
+      results.results[0].location.city
+      @events = results.results
+      render "index.json.jb"
+    elsif params[:search_type] == "Location"
+      remote.location_search(query: "Boston, MA", per_page: 2).results
+      @events = remote.metro_areas_events(18842).results
+      render "index.json.jb"
+    end
   end
 end
-
-# def venue
-#   remote = Songkickr::Remote.new Rails.application.credentials.songkick_api[:api_key]
-#   @results = remote.events(params[:venue])
-# end
 
 # def index
 #   remote = Songkickr::Remote.new Rails.application.credentials.songkick_api[:api_key]

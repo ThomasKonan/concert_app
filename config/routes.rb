@@ -1,13 +1,21 @@
 Rails.application.routes.draw do
   # EXAMPLE HTML ROUTE
-  # get "/photos" => "photos#index"
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
-    get "/events" => "events#index"
-    get "/events" => "events#setlist"
-    post "/sessions" => "sessions#create"
-    get "/users" => "users#show"
     post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
+
+    get "/events" => "events#index"
+    get "/user_events" => "user_events#index"
+    post "/user_events" => "user_events#create"
+    get "/user_events/:id" => "user_events#show"
+    patch "/user_events/:id" => "user_events#update"
+    delete "/user_events/:id" => "user_events#destroy"
+
+    # get "/setlists" => "setlists#index"
+    get "/setlists" => "setlists#search_setlists"
+
+    # get "https://api.setlist.fm/rest/1.0/search/artists?artistName=" => "events#setlist"
   end
 end
