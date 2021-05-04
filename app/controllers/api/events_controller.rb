@@ -11,8 +11,8 @@ class Api::EventsController < ApplicationController
       @events = results.results
       render "index.json.jb"
     elsif params[:search_type] == "Location"
-      remote.location_search(query: "Boston, MA", per_page: 2).results
-      @events = remote.metro_areas_events(18842).results
+      location_id = remote.location_search(query: params[:artist_name], per_page: 2).results[0].as_json["metro_area"]["id"]
+      @events = remote.metro_areas_events(location_id).results
       render "index.json.jb"
     end
   end

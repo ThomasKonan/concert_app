@@ -1,20 +1,22 @@
-require "setlistfm"
-require "httparty"
-require "faraday"
-require "faraday_middleware"
+# require "setlistfm"
+# require "httparty"
+# require "faraday"
+# require "faraday_middleware"
 
 class Api::SetlistsController < ApplicationController
   def index
-    setlists = Setlistfm.search_setlists({ artistName: "" })
+    setlistfm = Setlistfm.new(Rails.application.credentials.setlistfm_api[:api_key])
+    mbid = setlistfm.search_artists({ artistName: "BABY METAL" }).as_json["body"]["artist"][0]["mbid"]
+    @results = setlistfm.artist_setlists(mbid, { p: 2 }).body.setlist
     render "index.json.jb"
   end
 end
 
 # setlistfm.search_setlists({artistMbid: '27e2997f-f7a1-4353-bcc4-57b9274fa9a4'})
 
-#   def search_setlists(params = {})
-#     response = http.get("/rest/#{api_version}/search/setlists", params)
-#   end
+# def search_setlists(params = {})
+#   response = http.get("/rest/#{api_version}/search/setlists", params)
+# end
 
 #   module APIMethod
 #     def artist(mbid)

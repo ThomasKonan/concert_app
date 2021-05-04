@@ -13,8 +13,7 @@ Rails.application.routes.draw do
     patch "/user_events/:id" => "user_events#update"
     delete "/user_events/:id" => "user_events#destroy"
 
-    # get "/setlists" => "setlists#index"
-    get "/setlists" => "setlists#search_setlists"
+    get "/setlists" => "setlists#index"
 
     # get "https://api.setlist.fm/rest/1.0/search/artists?artistName=" => "events#setlist"
   end

@@ -28,6 +28,11 @@ class ApplicationController < ActionController::Base
       render json: {}, status: :unauthorized
     end
   end
+
+  def index
+    # vue app
+    render :file => "public/index.html"
+  end
 end
 
 # remote = Songkickr::Remote.new API_KEY
