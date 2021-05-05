@@ -17,19 +17,3 @@ class Api::EventsController < ApplicationController
     end
   end
 end
-
-# def index
-#   remote = Songkickr::Remote.new Rails.application.credentials.songkick_api[:api_key]
-#   @results = remote.events(params[:band])
-#   # @results = remote.events(params[:metro_area_name])
-#   # @results = remote.artist_search(artist_name: "Iron Maiden", per_page: "10").results
-#   # @results.each do |result|
-#   #   print result.display_name + "\n"
-#   # end
-#   # print "\n"
-# end
-
-# def index
-#   remote = Songkickr::Remote.new Rails.application.credentials.songkick_api[:api_key]
-#   @results = remote.events(params[:artist_name])
-# end
